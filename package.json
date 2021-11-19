@@ -1,0 +1,17 @@
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "test": "ava",
+    "build": "tsc index.ts",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@types/node": "^16.11.9",
+    "express": "^4.17.1",
+    "typescript": "^4.5.2"
+  }
+}
