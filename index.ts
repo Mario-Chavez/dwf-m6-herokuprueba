@@ -8,6 +8,12 @@ app.get("/env", (req, res) => {
   });
 });
 
+app.get("/db-env", (req, res) => {
+  res.json({
+    "deb-host": process.env.DB_HOST,
+  });
+});
+
 app.get("/hola", (req, res) => {
   res.json({
     message:
