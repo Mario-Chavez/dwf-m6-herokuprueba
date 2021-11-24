@@ -1,12 +1,14 @@
 {
   "name": "heroku",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev:front":"parcel serve ./src/index.html",
+    "build:front":"parcel build ./src/index.html",
     "dev": "nodemon --watch './index.ts' --exec ts-node dev.ts",
     "test": "ava",
-    "build": "tsc index.ts",
+    "build:api":"tsc index.ts",
+    "build": "yarn build:front && yarn build:api",
     "start": "node index.js"
   },
   "dependencies": {
@@ -14,6 +16,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.15",
+    "parcel": "^2.0.1",
     "typescript": "^4.5.2"
   }
 }
