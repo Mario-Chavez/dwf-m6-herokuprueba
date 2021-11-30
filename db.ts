@@ -1,9 +1,10 @@
 import * as admin from "firebase-admin";
-import * as serviceAccount from "./key.json";
+//import * as serviceAccount from "./key.json";
+const serviceKey = require("./serviceKey.json");
 
 /* inicicalizamos colocando nuestra key  */
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount as any),
+  credential: admin.credential.cert(serviceKey as any),
   databaseURL: "https://apx-dwf-m6-cebac-default-rtdb.firebaseio.com",
 });
 
