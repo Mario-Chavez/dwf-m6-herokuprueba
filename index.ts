@@ -170,7 +170,7 @@ app.post("/messages", (req, res) => {
 //});
 //
 
-app.use(express.static("dist")); //busca en dist las rutas y si no encuentra las rutas en el handler
+app.use(express.static("dist"));
 app.get("*", (req, res) => {
   res.sendFile(__dirname + "/dist/index.html");
 });
