@@ -1,6 +1,6 @@
 import * as admin from "firebase-admin";
 //import * as serviceAccount from "./key.json";
-const serviceKey = require("./serviceKey.json");
+const serviceKey = require("./key.json");
 
 /* inicicalizamos colocando nuestra key  */
 admin.initializeApp({

@@ -3,7 +3,7 @@ exports.__esModule = true;
 exports.rtdb = exports.firestore = void 0;
 var admin = require("firebase-admin");
 //import * as serviceAccount from "./key.json";
-var serviceKey = require("./serviceKey.json");
+var serviceKey = require("./key.json");
 /* inicicalizamos colocando nuestra key  */
 admin.initializeApp({
     credential: admin.credential.cert(serviceKey),
