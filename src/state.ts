@@ -1,5 +1,5 @@
-const API_BASE_URL = "process.env.PORT" || 3000;
-console.log(API_BASE_URL);
+const port = process.env.PORT || 3000;
+const API_BASE_URL = "port";
 
 import { rtdb } from "./rtdb";
 import map from "lodash/map";
