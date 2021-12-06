@@ -1,6 +1,4 @@
-const port = process.env.PORT || 3000;
-
-const API_BASE_URL = port;
+const API_BASE_URL = "https://dwf-m6-pruebaa1.herokuapp.com/";
 
 import { rtdb } from "./rtdb";
 import map from "lodash/map";
