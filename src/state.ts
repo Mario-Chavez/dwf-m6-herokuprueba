@@ -1,4 +1,6 @@
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "process.env.PORT" || 3000;
+console.log(API_BASE_URL);
+
 import { rtdb } from "./rtdb";
 import map from "lodash/map";
 
